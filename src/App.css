@@ -1,38 +1,37 @@
 .App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/151/original/Forecast.png?1628814854);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 {
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: "Saira Stencil One", cursive;
+  color: #810624;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App ul {
+  margin: 0 0 10px;
+  margin-top: 20px;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App li {
+  color: #7c7c7c;
+  font-size: 18px;
+  font-weight: 400;
+  height: 19px;
+  line-height: 1;
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App li:first-letter {
+  text-transform: capitalize;
 }

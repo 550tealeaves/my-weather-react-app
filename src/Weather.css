@@ -1,0 +1,64 @@
+.Weather .container {
+  background: linear-gradient(0.25turn, #eabaee, #ebf8e1, #a4d1f5);
+  border: 2px dotted rgb(160, 82, 94);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+.Weather .weather-app {
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+#icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.Weather .temperature {
+  color: rgb(44, 0, 65);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.Weather .weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
+.Weather .search-form {
+  margin-bottom: 25px;
+}
+
+#current-location {
+  background-color: #4fa746;
+  color: white;
+  border: none;
+}
+.weather-forecast{
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+}
+
+
+.weather-forecast-date{
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+
+.weather-forecast-temperature-min{
+    opacity: 0.5;
+}
+
+
+.weather-forecast-temperatures{
+    font-size: 13px;
+}
