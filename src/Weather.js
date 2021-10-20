@@ -148,7 +148,7 @@ export default function Weather(){
         <small>
           Project coded by Nastasia Pollas and is{" "}
           <a
-            href="https://github.com/550tealeaves/Weather-project"
+            href="https://github.com/550tealeaves/my-weather-react-app"
             target="blank"
           >
             open-source code on Github
