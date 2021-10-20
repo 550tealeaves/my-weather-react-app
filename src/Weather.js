@@ -1,5 +1,4 @@
 import React from "react";
-import axios from "axios";
 import "./Weather.css";
 
 export default function Weather(){
@@ -12,6 +11,7 @@ export default function Weather(){
     humidity: 80,
     wind: 12
   };
+
 
   return (
     <div className="Weather">
