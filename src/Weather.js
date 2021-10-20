@@ -154,7 +154,7 @@ export default function Weather(){
             open-source code on Github
           </a>{" "}
           and{" "}
-          <a href="https://blissful-hawking-5e92d0.netlify.app/" target="blank">
+            <a href="https://confident-northcutt-07eba8.netlify.app/" target="blank">
             hosted by Netlify
           </a>
         </small>
