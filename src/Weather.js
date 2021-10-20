@@ -78,7 +78,7 @@ export default function Weather(){
                           <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" width="42" />
                 <div className="weather-forecast-temperatures">
                     <span className="weather-forecast-temperature-max">
-                        18℃
+                        18°C
                     </span>
                 </div>
             </div>   
@@ -93,7 +93,7 @@ export default function Weather(){
                     <img src="http://openweathermap.org/img/wn/09d@2x.png" alt="" width="42" />
                     <div className="weather-forecast-temperatures">
                         <span className="weather-forecast-temperature-max">
-                            24℃
+                            24°C
                         </span>
                     </div>
                 </div>
@@ -108,7 +108,7 @@ export default function Weather(){
                     <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="" width="42" />
                     <div className="weather-forecast-temperatures">
                         <span className="weather-forecast-temperature-max">
-                            20℃
+                            20°C
                         </span>
                     </div>
                 </div>
@@ -123,7 +123,7 @@ export default function Weather(){
                     <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" width="42" />
                     <div className="weather-forecast-temperatures">
                         <span className="weather-forecast-temperature-max">
-                            22℃
+                            22°C
                         </span>
                     </div>
                 </div>
@@ -138,7 +138,7 @@ export default function Weather(){
                     <img src="http://openweathermap.org/img/wn/11d@2x.png" alt="" width="42" />
                     <div className="weather-forecast-temperatures">
                         <span className="weather-forecast-temperature-max">
-                            15℃
+                            15°C
                         </span>
                     </div>
                 </div>
