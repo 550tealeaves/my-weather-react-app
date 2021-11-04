@@ -35,3 +35,6 @@ body {
 .App li:first-letter {
   text-transform: capitalize;
 }
+.App footer{
+  font-weight: bold;
+}
