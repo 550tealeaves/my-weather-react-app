@@ -38,4 +38,5 @@ body {
 .App footer{
   font-weight: bold;
   font-style: italic;
+  color: darkgreen;
 }
