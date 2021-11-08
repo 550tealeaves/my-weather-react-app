@@ -1,5 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherTemperature from "./WeatherTemperature";
+
 
 export default function WeatherInfo(props){
     return(
@@ -18,10 +20,7 @@ export default function WeatherInfo(props){
                       className="float-left"
                     />
                     <div className="float-left">
-                      <span className="temperature">{Math.round(props.data.temperature)}</span>
-                      <span className="units">
-                        <a href="/">°C</a> | <a href="/">°F</a>
-                      </span>
+                            <WeatherTemperature celsius={props.data.temperature} />
                     </div>
                   </div>
                 </div>
@@ -32,81 +31,6 @@ export default function WeatherInfo(props){
                   </ul>
                 </div>
               </div>
-            <div className="weather-forecast">
-              <div className="row">
-                <div className="col-2">
-                    <div className="weather-forecast-date">
-                        Thu
-                    </div>
-                              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" width="42" />
-                    <div className="weather-forecast-temperatures">
-                        <span className="weather-forecast-temperature-max">
-                            18°C
-                        </span>
-                    </div>
-                </div>   
-                </div> 
-            </div>
-            <div className="weather-forecast">
-                <div className="row">
-                    <div className="col-2">
-                        <div className="weather-forecast-date">
-                            Fri
-                        </div>
-                        <img src="http://openweathermap.org/img/wn/09d@2x.png" alt="" width="42" />
-                        <div className="weather-forecast-temperatures">
-                            <span className="weather-forecast-temperature-max">
-                                24°C
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="weather-forecast">
-                <div className="row">
-                    <div className="col-2">
-                        <div className="weather-forecast-date">
-                            Sat
-                        </div>
-                        <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="" width="42" />
-                        <div className="weather-forecast-temperatures">
-                            <span className="weather-forecast-temperature-max">
-                                20°C
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="weather-forecast">
-                <div className="row">
-                    <div className="col-2">
-                        <div className="weather-forecast-date">
-                            Sun
-                        </div>
-                        <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" width="42" />
-                        <div className="weather-forecast-temperatures">
-                            <span className="weather-forecast-temperature-max">
-                                22°C
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="weather-forecast">
-                <div className="row">
-                    <div className="col-2">
-                        <div className="weather-forecast-date">
-                            Mon
-                        </div>
-                        <img src="http://openweathermap.org/img/wn/11d@2x.png" alt="" width="42" />
-                        <div className="weather-forecast-temperatures">
-                            <span className="weather-forecast-temperature-max">
-                                15°C
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     );
 }
