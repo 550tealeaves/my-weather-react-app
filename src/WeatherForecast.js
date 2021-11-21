@@ -14,20 +14,24 @@ export default function WeatherForecast(props) { //(4) Add WeatherIcon component
         setLoaded(true);
     }
 
-    
-    
     if (loaded){
         console.log(forecast);
         
         return (
-        <div className="WeatherForecast">
-            <div className="row">
-                <div className="col">
-                    <WeatherForecastDay data={forecast[0]} />
+            <div className="WeatherForecast">
+                <div className="row">
+                    {forecast.map(function(dailyForecast, index) {
+                        if (index < 5) {
+                            return (
+                                <div className="col" key={index}>
+                                    <WeatherForecastDay data={dailyForecast} />
+                                </div>
+                            )
+                        }
+                    })}      
                 </div>
             </div>
-        </div>
-    );
+        );
     } else {
         let apiKey = "ab6da5069e5bc23122a387b3e99bd05b";
         let longitude = props.coordinates.lon;
