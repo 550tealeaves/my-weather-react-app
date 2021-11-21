@@ -12,6 +12,7 @@ export default function Weather(props){
     console.log(response.data);
     setWeatherData({ 
       ready: true, 
+      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       city: response.data.name,
@@ -48,7 +49,7 @@ export default function Weather(props){
                     <input
                       type="search"
                       placeholder="Enter city"
-                      autofocus="on"
+                      autoFocus="on"
                       autoComplete="off"
                       className="form-control shadow-sm"
                       onChange={handleCityChange}
@@ -67,7 +68,7 @@ export default function Weather(props){
                 </div>
               </form>
               <WeatherInfo data={weatherData} />
-              <WeatherForecast />
+              <WeatherForecast coordinates={weatherData.coordinates} />
             </div>
           </div>
         </div>
