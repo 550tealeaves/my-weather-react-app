@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
+import WeatherHere from "./WeatherHere";
 import axios from "axios";
 import "./Weather.css";
 
@@ -63,7 +64,7 @@ export default function Weather(props){
                     />
                   </div>
                   <div className="col-3">
-                    <button className="btn btn-success w-100">Current</button>
+                    <WeatherHere place={weatherData} />
                   </div>
                 </div>
               </form>

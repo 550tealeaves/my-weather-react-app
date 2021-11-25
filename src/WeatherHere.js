@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-export default function WeatherHere(){
+export default function WeatherHere(props){
     function handleResponse(response){
         console.log(response.data);
     }
@@ -16,5 +16,11 @@ export default function WeatherHere(){
         event.preventDefault();
         navigator.geolocation.getCurrentPosition(searchLocation);
     }
+
+    return(
+        <div className="WeatherHere">
+            <button className="btn btn-success w-100">Current</button>
+        </div>
+    )
 
 }
