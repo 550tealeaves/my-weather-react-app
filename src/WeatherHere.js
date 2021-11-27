@@ -6,6 +6,5 @@ export default function WeatherHere(props){
         <div className="WeatherHere">
             <button className="btn btn-success shadow-sm w-100" onClick={props.getCurrentLocation}>Current</button>
         </div>
-    )
-
+    );
 }
