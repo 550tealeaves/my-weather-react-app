@@ -38,6 +38,17 @@ export default function Weather(props){
   function handleCityChange(event) {
     setCity(event.target.value);
   }
+
+  function searchLocation(position) {
+    let apiKey = "ab6da5069e5bc23122a387b3e99bd05b";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude
+      }&lon=${position.coords.longitude}&appid=${apiKey}&units=imperial`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+  function getCurrentLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(searchLocation);
+  }
   
   if (weatherData.ready) {
     return (
@@ -64,7 +75,7 @@ export default function Weather(props){
                     />
                   </div>
                   <div className="col-3">
-                    <WeatherHere place={weatherData} />
+                    <WeatherHere getCurrentLocation={getCurrentLocation} />
                   </div>
                 </div>
               </form>
