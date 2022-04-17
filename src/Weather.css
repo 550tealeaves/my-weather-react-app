@@ -23,12 +23,14 @@ canvas {
   margin-bottom: 25px;
 }
 
-#current-location {
-  background-color: #4fa746;
-  color: white;
-  border: none;
+
+.btn-color{
+  background-color: #353090;
 }
 
+.btn-edit{
+  background-color: rgb(242, 61, 134);
+}
 
 
 
